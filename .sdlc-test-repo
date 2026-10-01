@@ -1,0 +1,3 @@
+sdlc-test-repo
+variant: unadopted
+Written by solutions/ontological/scripts/test-repos.ts. Publishing force-pushes only to a repository that carries this file.
