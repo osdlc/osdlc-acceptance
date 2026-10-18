@@ -2,7 +2,7 @@
 type: task
 schema_version: '9'
 id: T-4VCM
-state: open/ready
+state: closed/done
 created: 2026-10-18
 related: []
 tags: []
@@ -10,6 +10,13 @@ need_human_review: false
 impact: low
 complexity: small
 autonomy: autonomous/pr
+prs:
+  - https://github.com/osdlc/osdlc-acceptance/pull/5
+  - https://github.com/osdlc/osdlc-acceptance/pull/8
+  - https://github.com/osdlc/osdlc-acceptance/pull/13
+  - https://github.com/osdlc/osdlc-acceptance/pull/16
+last_reviewed: 2026-10-18
+completion_note: "Shipped via #16."
 ---
 # Add the acceptance line to the README
 
