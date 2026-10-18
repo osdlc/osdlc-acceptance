@@ -1482,3 +1482,27 @@
   # flagged `truncated`. At least `max_inline_bytes`.
   # max_blob_bytes: 1048576
 lease_authority: origin
+
+schedules:
+  - name: acceptance-check
+    cron: "* * * * *"
+    run: check
+    limits:
+      minutes: 10
+
+orchestrator:
+  limits:
+    executor:
+      implement: 1
+    schedule:
+      total: 1
+  merge:
+    allowed_targets: [main]
+    required_evidence: [pr-review]
+
+log:
+  capture:
+    prompts: true
+    messages: true
+    tool_args: true
+    tool_output: true
