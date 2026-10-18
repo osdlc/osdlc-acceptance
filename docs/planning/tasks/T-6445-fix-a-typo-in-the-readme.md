@@ -2,7 +2,7 @@
 type: task
 schema_version: '9'
 id: T-6445
-state: open/ready
+state: closed/done
 title: Fix a typo in the README
 created: 2026-10-18
 related:
@@ -13,7 +13,14 @@ impact: medium
 complexity: medium
 autonomy: autonomous/pr
 kind: implementation
-readiness_verified_at: 2026-10-18T00:00:00Z
+prs:
+  - https://github.com/osdlc/osdlc-acceptance/pull/4
+  - https://github.com/osdlc/osdlc-acceptance/pull/7
+  - https://github.com/osdlc/osdlc-acceptance/pull/10
+  - https://github.com/osdlc/osdlc-acceptance/pull/12
+  - https://github.com/osdlc/osdlc-acceptance/pull/15
+last_reviewed: 2026-10-18
+completion_note: "Shipped via #15."
 ---
 # Fix a typo in the README
 
