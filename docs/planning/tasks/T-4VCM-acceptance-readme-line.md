@@ -53,3 +53,19 @@ README.md contains the line `Acceptance run: ok` as its own line, with the exist
 ## Dependencies
 
 - none
+
+## Post-mortem
+
+_Captured by /sdlc:task-work on 2026-10-18. PR: pending._
+
+### Acceptance criteria coverage
+
+- AC-1: agent-manual — appended `Acceptance run: ok` to README.md and confirmed with `tail`
+
+### What worked
+
+- nothing notable
+
+### Friction and automation gaps
+
+- `sdlc quality run --diff-against-baseline` looks for the baseline under the worktree's `.sdlc/`, not the main checkout's — the skill should pass `--baseline-dir <project-root>/.sdlc/quality-baselines` in Step 7/9.
