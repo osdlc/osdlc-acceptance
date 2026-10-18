@@ -45,3 +45,20 @@ existing text is unchanged.
 ## Out of scope
 
 Any other change to README.md or to the rest of the repository.
+
+## Post-mortem
+
+_Captured by /sdlc:task-work on 2026-10-18. PR: pending._
+
+### Acceptance criteria coverage
+
+- AC-1: agent-manual — inspected `git diff`; README.md now ends with a blank line and `Acceptance run: ok`
+
+### What worked
+
+- nothing notable
+
+### Friction and automation gaps
+
+- `--cleanup-on-fail` was rejected with `--mode pass`, though task-work's Step 5a passes both flags — task-work should pass `--cleanup-on-fail` only on the fail path
+- `sdlc task begin` no longer plants the Post-mortem stub the Step 8 prose says it does — Step 8 wording should say to create the section
