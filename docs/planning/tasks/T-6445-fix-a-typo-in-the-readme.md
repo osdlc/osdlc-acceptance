@@ -35,3 +35,20 @@ Find one typo or unclear sentence in the README and fix it. A small, safe first 
 ## Out of scope
 
 - Rewriting or restructuring the README.
+
+## Post-mortem
+
+_Captured by /sdlc:task-work on 2026-10-18. PR: pending._
+
+### Acceptance criteria coverage
+
+- AC-1: agent-manual — README had no literal typo; fixed the one unclear sentence ("resets it to the `starter` tag, then works on it")
+- AC-2: agent-manual — README is the only file changed besides this task file's post-mortem; untracked setup `package-lock.json` left uncommitted
+
+### What worked
+
+- nothing notable
+
+### Friction and automation gaps
+
+- none observed
