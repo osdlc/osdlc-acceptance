@@ -53,3 +53,22 @@ README.md contains the line `Acceptance run: ok` on its own line.
 ## Dependencies
 
 - none
+
+## Post-mortem
+
+_Captured by /sdlc:task-work on 2026-10-18. PR: pending._
+
+### Acceptance criteria coverage
+
+- AC-1: agent-manual — confirmed `Acceptance run: ok` is the last line of README.md; `npm test` check gate passed (OK 1/1)
+
+### What worked
+
+- nothing notable
+
+### Friction and automation gaps
+
+- `task begin` did not plant the Post-mortem stub the skill says it does — begin should add the stub, or the skill should say to append it
+- `ensure-ready-mutate` rejects `--cleanup-on-fail` with `--mode pass`, contradicting the skill's instruction to always pass it — skill should pass the flag only on the fail path
+- Untrusted repo blocked baseline capture and setup — acceptance harness should run `sdlc repo trust` up front
+- Setup `npm install` leaves an untracked package-lock.json in the worktree — add it to .gitignore in the starter repo
