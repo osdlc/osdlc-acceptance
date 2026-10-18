@@ -13,95 +13,43 @@ autonomy: autonomous/pr
 ---
 # Add the acceptance line to the README
 
+> AUTO-DEFINED: this spec was best-effort machine-authored by
+> /sdlc:task-auto-define on 2026-10-18 because the task is
+> autonomy: autonomous/pr. Review the Goal, Approach, Today,
+> Areas, and Acceptance-criteria carefully before trusting it.
+
 ## Goal
 
-<Why this task exists. The problem it solves, the work it unblocks, or the
-risk it mitigates. Two or three sentences — the elevator pitch.>
+Add one line to README.md that says "Acceptance run: ok". It gives the acceptance run a visible, checkable artifact in the repository.
 
 ## Today
 
-<Free-form prose describing the current state of the relevant area — what's
-there, what's wrong, or what's missing. No required shape and no path
-resolution: this is narrative context for the implementer, not a
-machine-verified inventory.>
+README.md holds a title and a short paragraph describing the repository as an sdlc test project. It has no acceptance-run line.
 
 ## Proposed
 
-<Target state after this task ships. Concrete enough that an implementer
-can tell when they're done. Not the steps — the destination.>
+README.md contains the line `Acceptance run: ok` as its own line, with the existing content unchanged.
 
 ## Approach
 
-<Numbered, ordered steps to get from Today to Proposed. Each step should
-be small enough to commit on its own if useful. Call out any decisions
-still open inside the step.>
-
-1. <step>
-2. <step>
-3. <step>
-
-## Areas
-
-<The packages, directories, or modules this task expects to touch.
-Advisory, not a resolution gate: an area does not have to name an exact
-existing path. When written as a table, use two columns — Area (a
-package/directory/module) and Note (a one-line gloss on why it's in
-play). Prose or a bulleted list is equally fine.>
-
-| Area | Note |
-|---|---|
-| `path/to/dir/` | <why this area is in play> |
-
-## Acceptance criteria
-
-<Each AC must be observable from outside the change — a test that passes,
-a user-visible behavior, a removed wart. Avoid "the code is cleaner" style
-ACs; pick something verifiable.>
-
-- [ ] AC-1: <criterion>
-- [ ] AC-2: <criterion>
-- [ ] AC-3: <criterion>
-
-## Out of scope
-
-<Things adjacent to this task that are deliberately NOT being addressed
-here. Useful for keeping PR review focused and for future tasks to point
-back to. Always required: if scope is obvious and nothing is excluded,
-leave a single "- none" bullet so the explicit signal is "scope
-considered, nothing to exclude.">
-
-- none
-
-## Dependencies
-
-<Other tasks, branches, infra changes, or external decisions this task
-waits on. For hard "B cannot start until A closes" dependencies on
-other tasks or epics, also record them in the frontmatter
-`depends_on:` array (strict wikilink shape, e.g. `[[T-0010]]`) — the
-audit walks that graph for cycle detection. This prose section is the
-human-readable narrative; `depends_on:` is the machine-readable
-canonical list. Leave a single "- none" bullet if there are none.>
-
-- <dependency or "none">
-
-## Discovery context
-
-<Optional. How this task got onto the list: linked incident, design doc,
-upstream conversation, prior PR review comment. Helps future-you remember
-why this was worth doing. Delete this section if there's nothing to add.>
-
--
-
-## Goal
-
-Add one line to README.md that says "Acceptance run: ok".
-
-## Acceptance criteria
-
-- [ ] AC-1: README.md contains the line `Acceptance run: ok`.
+1. Open README.md.
+2. Append a blank line, then the line `Acceptance run: ok`, at the end of the file.
+3. Commit the change.
 
 ## Areas
 
 | Area | Note |
 |---|---|
 | `README.md` | the one line |
+
+## Acceptance criteria
+
+- [ ] AC-1: README.md contains the line `Acceptance run: ok`.
+
+## Out of scope
+
+- none
+
+## Dependencies
+
+- none
