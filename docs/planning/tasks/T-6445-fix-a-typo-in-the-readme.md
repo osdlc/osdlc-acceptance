@@ -35,3 +35,20 @@ Find one typo or unclear sentence in the README and fix it. A small, safe first 
 ## Out of scope
 
 - Rewriting or restructuring the README.
+
+## Post-mortem
+
+_Captured by /sdlc:task-work on 2026-10-18. PR: pending._
+
+### Acceptance criteria coverage
+
+- AC-1: agent-manual — README sentence "do not edit by hand" reworded to "do not edit it by hand"; confirmed in diff
+- AC-2: auto — `git diff --stat origin/main` shows only README.md and this task file's post-mortem
+
+### What worked
+
+- nothing notable
+
+### Friction and automation gaps
+
+- none observed
