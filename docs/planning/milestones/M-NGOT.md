@@ -1,0 +1,68 @@
+---
+type: milestone
+schema_version: '2'
+id: M-NGOT
+state: open/draft
+title: Acceptance run
+created: 2026-10-18
+related: []
+tags: []
+need_human_review: false
+tasks: []
+capabilities: []
+---
+# Acceptance run
+
+## Goal
+
+<What this milestone delivers in one paragraph. The outcome it
+pursues — the user-visible or system-visible change it represents
+once shipped.>
+
+## Success criteria
+
+<3–6 high-level bullets capturing verifiable end states. Outcomes,
+not implementation steps. Use markdown todos `- [ ]` for each.>
+
+- [ ] <criterion>
+- [ ] <criterion>
+
+## Deliverables
+
+<What the milestone produces. `tasks:` is the member roster, so
+restate a task here only to add what the roster cannot carry: a wave
+or stage grouping, a per-task note, a status column. A bare copy of
+the roster earns nothing and drifts out of step with it. Each entry is
+a checkbox; replace a placeholder with a wikilink (`[[D-NNNN-slug]]`,
+`[[S-NNNN-slug]]`) once the entity exists. Encouraged categories
+below; mix and match as the milestone calls for.>
+
+### Decisions
+
+- [ ] <decision/ADR title>
+
+### Standards
+
+- [ ] <standard title>
+
+### Entity specifications
+
+- [ ] <entity name>
+
+### Reviews
+
+- [ ] <what gets reviewed and accepted>
+
+## Out of scope
+
+<What this milestone explicitly does NOT cover. Delete this section
+if scope is obvious from the Goal.>
+
+- <item>
+
+## Risks / open questions
+
+<Known concerns, unresolved decisions, dependencies. Delete this
+section if there's nothing to flag.>
+
+- <risk>
