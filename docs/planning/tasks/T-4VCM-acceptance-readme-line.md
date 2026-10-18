@@ -40,8 +40,24 @@ existing text is unchanged.
 
 ## Acceptance criteria
 
-- [ ] AC-1: README.md contains the line `Acceptance run: ok`.
+- [x] AC-1: README.md contains the line `Acceptance run: ok`.
 
 ## Out of scope
 
 Any other change to README.md or to the rest of the repository.
+
+## Post-mortem
+
+_Captured by /sdlc:task-work on 2026-10-18. PR: pending._
+
+### Acceptance criteria coverage
+
+- AC-1: agent-manual — inspected the README.md diff; the last line is `Acceptance run: ok` after a blank line
+
+### What worked
+
+- nothing notable
+
+### Friction and automation gaps
+
+- none observed
